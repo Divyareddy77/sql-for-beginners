@@ -1,0 +1,2 @@
+-- Write a SQL query below --
+SELECT CONCAT(first_name,' ',last_name) AS full_name, email, city FROM customers c JOIN addresses a ON c.id=a.customer_id WHERE c.is_Active=true AND is_default=true ORDER BY full_name ASC; 
